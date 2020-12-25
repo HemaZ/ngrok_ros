@@ -28,6 +28,11 @@ add_service_files(FILES
 StartTunnel.srv
 )
 
+add_message_files(
+  FILES
+  PublicURLs.msg
+)
+
 # Actually generate the language-specific message and service files
 generate_messages(DEPENDENCIES std_msgs)
 
